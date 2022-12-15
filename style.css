@@ -1,0 +1,368 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #003E52;
+    overflow-x: hidden;
+}
+
+/* --------HEADER---------*/
+header {
+    background-color: #fff;
+    height: 130px;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+#hamburger {
+    visibility: hidden;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin: 10px;
+    list-style-type: none;
+    color: #003E52;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6cadc2
+}
+
+/* -------Partie 1-------- */
+#partie1 {
+    background-image: url(images/header-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+/*-------Partie 2----------*/
+#partie2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+#imagePartie2 {
+    margin-left: 0px;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+#partie2 h1 {
+    padding-bottom: 0;
+}
+
+#titrePartie2 {
+    font-weight: bold;
+}
+
+#partie2 ul {
+    list-style-type: none;
+    text-align: end;
+    line-height: 30px;
+    padding-top: 80px;
+    margin-top: 10px;
+}
+
+/*--------Partie 3-----------*/
+#partie3 {
+    background-image: url(images/images-slider.JPG);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 70vh;
+}
+
+/*--------Partie 4------------*/
+#partie4 {
+    width: 50%;
+    margin: auto;
+}
+
+#signature {
+    border-bottom: #6cadc2 3px solid;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+table td {
+    padding: 5px;
+}
+
+i {
+    margin-right: 15px;
+}
+
+/*------------Partie 5-----------*/
+#partie5 img {
+    width: 100vw;
+    height: auto;
+}
+
+/*------------Partie 6------------*/
+#partie6 iframe {
+    width: 100vw;
+    height: 400px;
+    filter: grayscale(4);
+}
+
+/*----------FOOTER-----------------*/
+footer {
+    height: 200px;
+    width: 100vw;
+    bottom: 0;
+    background-color: #003e52;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h4 {
+    margin-top: 60px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/*-----------RESPONSIVE pour téléphone et tablette---------------*/
+@media screen and (max-width: 1024px) {
+    header {
+        position: fixed;
+    }
+
+    nav {
+        flex-direction: column;
+        position: fixed;
+        height: 110px;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+    }
+
+    #navigation li{
+        font-size: 20px;
+        justify-content: space-between;
+    }
+
+    a {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .divImg1 {
+        background-image: url(images/logo-kome-waza.jpg);
+    }
+
+    #partie2 {
+        justify-content: center;
+    }
+}
+
+/*------------RESPONSIVE spécifique-------------*/
+@media screen and (max-width: 954px) {
+    #navigation {
+        font-size: 16px;
+    }
+    header {
+        z-index: 4;
+    }
+    #partie2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #imagePartie2 {
+        /* align-self: center; */
+        margin: 0;
+    }
+
+    #partie2 ul {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    #partie3 {
+        margin-top: 10px;
+    }
+
+    #partie4 {
+        margin-top: 15px
+    }
+}
+
+/*----------RESPONSIVE pour tablette---------------*/
+@media screen and (max-width: 768px) {
+    #hamburger {
+        visibility: visible;
+        padding-top: 20px;
+        margin: auto;
+    }
+    
+    #navigation {
+        position: absolute;
+        top: 100px;
+        display: none;
+        background-color: #fff;
+        width: 100vw;
+    }
+
+    nav ul li {
+        margin: 6px
+    }
+
+    #logo1 {
+        height: 40px;
+
+    }
+
+    #partie1 {
+        height: 89vh;
+        width: auto;
+    }
+
+    #partie2 {
+        text-align: center;
+    }
+
+    #partie2 ul {
+        padding-top: 10px;
+    }
+
+    #partie3 {
+        margin-top: 10px;
+    }
+
+    #partie4 {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    #partie6 iframe {
+        height: 250px;
+    }
+
+    footer {
+        height: 100px
+    }
+
+    footer h4 {
+        margin-top: 25px;
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+}
+
+/*------------RESPONSIVE pour téléphone-------------*/
+@media screen and (max-width: 576px) {
+    header {
+        height: 80px;
+    }
+
+    nav {
+        position: absolute;
+        height: 60px;
+    }
+
+    #navigation {
+        position: absolute;
+        top: 60px;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    #partie1 {
+        height: 100vw;
+        margin-bottom: 20px;
+    }
+    #imagePartie2 {
+        width: 100vw;
+    }
+    #partie2 ul {
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    #partie3 {
+        margin-bottom: 50px;
+    }
+
+    #partie3 img {
+        height: 19vh;
+    }
+
+    #partie4 {
+        font-size: 0.7rem;
+        width: 100vw;
+    }
+    table {
+        width: 100vw;
+    }
+
+    #partie4 table {
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+
+    #partie6 iframe {
+        height: 200px;
+    }
+
+    footer {
+        height: 90px;
+    }
+
+    footer h4 {
+        margin-top: 25px;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+} footer h4 {
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
